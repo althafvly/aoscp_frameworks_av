@@ -78,6 +78,21 @@ cc_library_shared {
             cfi: true,
         },
     },
+<<<<<<< HEAD
+=======
+
+     product_variables: {
+        qcom_bsp_legacy: {
+            cflags: ["-DQCOM_BSP_LEGACY"],
+        },
+        uses_media_extensions: {
+            cflags: ["-DTARGET_USES_MEDIA_EXTENSIONS"],
+        },
+        has_legacy_camera_hal1: {
+            cflags: ["-DTARGET_HAS_LEGACY_CAMERA_HAL1"],
+        },
+    },
+>>>>>>> 0875fe8... OMXNodeInstance: Fix legacy HAL1 after merge of android-7.1.0_r7
 }
 
 cc_library_static {
